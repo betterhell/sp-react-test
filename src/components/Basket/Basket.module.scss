@@ -1,0 +1,30 @@
+
+.basket {
+  width: 409px;
+  position: sticky;
+  height: 100vh;
+  border-left: 1px solid #CFCFCF;
+  transition: all 0.3s ease-in-out;
+}
+
+.basket__items {
+  padding: 40px;
+  h1 {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 21px;
+  }
+  border-bottom: 1px solid #CFCFCF;
+}
+
+.basket__totalPrice {
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  div {
+    display: flex;
+    justify-content: space-between;
+  }
+}

@@ -1,0 +1,68 @@
+.basketItem {
+  display: flex;
+  max-width: 330px;
+  height: 100px;
+  position: relative;
+
+  img {
+    max-width: 90px;
+    height: 51px;
+    padding: 25px 5px;
+    margin-right: 11.9px;
+  }
+}
+
+.basketItem__info {
+  display: flex;
+  flex-direction: column;
+
+  h3 {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    margin: 0 0 15px 0;
+    max-width: 203px;
+  }
+}
+
+.basketItem__countPrice {
+  display: flex;
+  gap: 25px;
+}
+
+.basketItem__buttons {
+  display: flex;
+  gap: 18px;
+
+  button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+  }
+
+  p {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+  }
+}
+
+.basketItem__price {
+  p {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+  }
+}
+
+.basketItem__removeBtn {
+  position: absolute;
+  right: 0;
+
+  button {
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+
+  }
+}
