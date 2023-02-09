@@ -12,7 +12,6 @@ interface CardProps {
 }
 
 const Card: FC<CardProps> = ({product}) => {
-
     const {addToCart} = useBasketStore()
 
     return (

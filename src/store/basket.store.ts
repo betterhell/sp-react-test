@@ -2,7 +2,7 @@ import {create} from "zustand";
 import {ICart} from "../types/cart";
 import {persist} from "zustand/middleware";
 
-export const useBasketStore = create<ICart>()((set, get) => ({
+export const useBasketStore = create(persist<ICart>((set, get) => ({
     items: [],
 
     addToCart: (product) => {
@@ -60,4 +60,8 @@ export const useBasketStore = create<ICart>()((set, get) => ({
             });
         }
     },
-}))
+
+}), {
+        name: "basket",
+    })
+)

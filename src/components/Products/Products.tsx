@@ -1,11 +1,11 @@
 import React from 'react';
 import styles from "./Products.module.scss"
 
-import {IProduct} from "../../types/product";
-import {IProducts} from "../../types/products";
 import Card from "../Card/Card";
+import {useProductsStore} from "../../store/products.store";
 
-const Products: React.FC<IProducts> = ({products}) => {
+const Products= () => {
+    const {products} = useProductsStore()
 
     return (
         <div className={styles.products}>
