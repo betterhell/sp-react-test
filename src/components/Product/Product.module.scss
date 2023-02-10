@@ -52,10 +52,12 @@
 }
 
 .product__image {
-  width: 890px;
+  width: 100%;
+
   img {
     border: 1px solid #D5D5D5;
-    width: 100%;
+    box-sizing: border-box;
+    width: 890px;
   }
 }
 
@@ -69,5 +71,21 @@
     font-size: 24px;
     line-height: 28px;
     margin: 0;
+  }
+}
+
+//
+@media screen and (max-width: 1335px) {
+  .product {
+    padding: 0 30px;
+  }
+  .product__image {
+    width: 100%;
+
+    img {
+      border: 1px solid #D5D5D5;
+      box-sizing: border-box;
+      width: 100%;
+    }
   }
 }
