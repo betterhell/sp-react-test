@@ -1,15 +1,36 @@
 
-.basket {
-  width: 409px;
-  position: sticky;
-  height: 100vh;
+.basket_open {
+  max-width: 410px;
+  width: 100%;
   border-left: 1px solid #CFCFCF;
-  transition: all 0.3s ease-in-out;
+}
+
+.basket_close {
+  width: 0;
+}
+
+.basket_sticky {
+  position: sticky;
+  right: 0;
+  top: 0;
+}
+
+.basket__overflow {
+  overflow-y: scroll;
 }
 
 .basket__items {
+  background-color: #FFFFFF;
   padding: 40px;
+  height: 340px;
   h1 {
+    position: sticky;
+    left: 0;
+    top:-40px;
+    width: 100%;
+    height: 40px;
+    background-color: #FFFFFF;
+    z-index: 1;
     font-weight: 700;
     font-size: 18px;
     line-height: 21px;
@@ -17,14 +38,64 @@
   border-bottom: 1px solid #CFCFCF;
 }
 
-.basket__totalPrice {
+.basket__price {
+  background-color: #FFFFFF;
   padding: 40px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 
+
+  p {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 34px;
+  }
+
   div {
     display: flex;
     justify-content: space-between;
+  }
+}
+
+.basket__price_totalPrice {
+  p {
+    font-weight: 700;
+    font-size: 21px;
+    line-height: 34px;
+  }
+}
+
+// 
+
+@media screen and (max-width: 768px) {
+  .basket_open {
+    position: absolute;
+    top: 80px;
+    right: 0;
+    z-index: 100;
+    max-width: 100vw;
+    border-left: none;
+    transition: all 0.3s ease-in-out;
+  }
+
+  .basket__items {
+    padding: 20px;
+
+    h1 {
+      top: -20px
+    }
+  }
+
+  .basket__price {
+    padding: 20px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .basket_open {
+    width: 100%;
+    border-left: 1px solid #CFCFCF;
+    transition: all 0.3s ease-in-out;
   }
 }

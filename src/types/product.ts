@@ -1,10 +1,10 @@
 export interface ProductState {
-    currentProduct: IProduct | null
-    getCurrentProduct: (productId: string) => void;
+    currentProduct: IProduct | null;
+    getCurrentProduct: (id: number) => void;
 }
 
 export interface IProduct {
-    id: string;
+    id: number,
     title: string;
     price: number;
     description: string;

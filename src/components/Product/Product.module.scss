@@ -1,10 +1,10 @@
-.productInfo {
+.product {
   display: flex;
-  margin: 60px 0 60px 170px;
+  margin: 60px auto;
   max-width: 1230px;
 }
 
-.productInfo__desc {
+.product__desc {
   button {
     background: #3366FF;
     border-radius: 3px;
@@ -28,7 +28,7 @@
     margin: 0 0 20px 0;
   }
 
-  .productInfo__backBtn {
+  .product__backBtn {
     padding: 8px 30px;
     margin-bottom: 20px;
     font-weight: 400;
@@ -37,7 +37,7 @@
   }
 }
 
-.productInfo__addToCart {
+.product__addToCart {
   cursor: pointer;
   height: 40px;
   width: 40px;
@@ -51,7 +51,7 @@
   }
 }
 
-.productInfo__image {
+.product__image {
   width: 890px;
   img {
     border: 1px solid #D5D5D5;
@@ -59,7 +59,7 @@
   }
 }
 
-.productInfo__buy {
+.product__buy {
   display: flex;
   gap: 15px;
   align-items: center;

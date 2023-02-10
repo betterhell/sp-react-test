@@ -1,14 +1,16 @@
-import {IProduct} from "./product";
+import { IProduct } from "./product";
 
 export interface ItemOfCart {
-    product: IProduct;
-    count: number;
+  product: IProduct;
+  count: number;
 }
 
 export interface ICart {
-    items: ItemOfCart[]
-    addToCart: (product: IProduct) => void;
-    deleteFromCart: (productId: string) => void;
-    increaseItemCount: (productId: string) => void;
-    decreaseItemCount: (productId: string) => void;
+  items: ItemOfCart[];
+  isOpen: boolean;
+  toggleCart: () => void;
+  addToCart: (product: IProduct) => void;
+  deleteFromCart: (id: number) => void;
+  increaseItemCount: (id: number) => void;
+  decreaseItemCount: (id: number) => void;
 }
