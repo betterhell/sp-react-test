@@ -9,7 +9,6 @@ import { priceWithSpace } from "../../utils/price";
 const Product = () => {
   const { addToCart } = useBasketStore();
   const { currentProduct, getCurrentProduct } = useProductStore();
-
   const { id } = useParams();
 
   useEffect(() => {
