@@ -1,9 +1,6 @@
 import { IProduct } from "../types/product";
 import { ItemOfCart } from "../types/cart";
 
-const tax = 100;
-const shipping = 150;
-
 export const priceWithSpace = (numbers: number) => {
   return String(numbers).replace(/\B(?=(\d{3})+(?!\d))/g, " ");
 };
@@ -15,6 +12,9 @@ export const getPrice = (items: ItemOfCart[]): number => {
 };
 
 export const getPriceWithTax = (product: IProduct): number => {
+  const tax = 100;
+  const shipping = 150;
+
   return product.price + tax + shipping;
 };
 
