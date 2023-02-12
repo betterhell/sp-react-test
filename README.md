@@ -1,4 +1,4 @@
-<h1>Test project for sborkaproject.ru/</h1>
+<h1>Test project for sborkaproject.ru</h1>
 
 <h3>Core:</h3>
 <ul>
