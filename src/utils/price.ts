@@ -1,16 +1,16 @@
-import { ItemOfCart } from "../types/cart";
+import { ICartItem } from "../types/cart";
 
 export const priceWithSpace = (numbers: number) => {
   return String(numbers).replace(/\B(?=(\d{3})+(?!\d))/g, " ");
 };
 
-export const getSubtotal = (items: ItemOfCart[]): number => {
+export const getSubtotal = (items: ICartItem[]): number => {
   return items
     .map((item) => item.product.price * item.count)
     .reduce((acc, curr) => acc + curr, 0);
 };
 
-export const getTotalPrice = (items: ItemOfCart[]): number => {
+export const getTotalPrice = (items: ICartItem[]): number => {
   const tax = 100;
   const shipping = 150;
 

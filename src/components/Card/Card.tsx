@@ -1,10 +1,11 @@
 import React, { FC } from "react";
 import styles from "./Card.module.scss";
+import { NavLink } from "react-router-dom";
+
 import { ReactComponent as Cart } from "../../assets/icons/CartIcon.svg";
 import { IProduct } from "../../types/product";
-import { priceWithSpace } from "../../utils/price";
 import { useBasketStore } from "../../store/basket.store";
-import { NavLink } from "react-router-dom";
+import { priceWithSpace } from "../../utils/price";
 
 interface CardProps {
   product: IProduct;

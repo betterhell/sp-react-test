@@ -13,13 +13,11 @@ const Products = () => {
   }, [getAllProducts]);
 
   return (
-    <>
-      <div className={styles.products__basket}>
-        {products?.map((product) => (
-          <Card key={product.id} product={product} />
-        ))}
-      </div>
-    </>
+    <div className={styles.products__basket}>
+      {products?.map((product) => (
+        <Card key={product.id} product={product} />
+      ))}
+    </div>
   );
 };
 

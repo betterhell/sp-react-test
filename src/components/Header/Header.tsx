@@ -5,12 +5,12 @@ import { ReactComponent as Cart } from "../../assets/icons/CartIcon.svg";
 
 import { NavLink } from "react-router-dom";
 import { useBasketStore } from "../../store/basket.store";
-import { getPriceOfProduct } from "../../utils/basketCounter";
+import { basketCounter } from "../../utils/basketCounter";
 
 const Header = () => {
   const { items, toggleCart } = useBasketStore();
 
-  const productCount = useMemo(() => getPriceOfProduct(items), [items]);
+  const productCount = useMemo(() => basketCounter(items), [items]);
 
   return (
     <div className={styles.header}>

@@ -1,11 +1,9 @@
-import {ItemOfCart} from "../types/cart";
+import { ICartItem } from "../types/cart";
 
-export const getPriceOfProduct = (items: ItemOfCart[]): number => {
-    const productCount = items.map((item) => item.count)
+export const basketCounter = (items: ICartItem[]): number => {
+  const productCount = items.map((item) => item.count);
 
-    return productCount
-        .reduce((acc, curr) => {
-                return acc + curr;
-            }, 0
-        );
-}
+  return productCount.reduce((acc, curr) => {
+    return acc + curr;
+  }, 0);
+};

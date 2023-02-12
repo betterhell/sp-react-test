@@ -1,8 +1,9 @@
 import React, { useEffect } from "react";
 import { NavLink, useParams } from "react-router-dom";
 import styles from "./Product.module.scss";
-import { useBasketStore } from "../../store/basket.store";
+
 import { ReactComponent as Cart } from "../../assets/icons/CartIcon.svg";
+import { useBasketStore } from "../../store/basket.store";
 import { useProductStore } from "../../store/product.store";
 import { priceWithSpace } from "../../utils/price";
 

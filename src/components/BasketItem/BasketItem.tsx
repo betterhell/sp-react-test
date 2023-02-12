@@ -1,6 +1,6 @@
 import React, { FC } from "react";
-
 import styles from "./BasketItem.module.scss";
+
 import { ReactComponent as DecreaseIcon } from "../../assets/icons/DecreaseIcon.svg";
 import { ReactComponent as IncreaseIcon } from "../../assets/icons/IncreaseIcon.svg";
 import { ReactComponent as RemoveIcon } from "../../assets/icons/RemoveIcon.svg";
