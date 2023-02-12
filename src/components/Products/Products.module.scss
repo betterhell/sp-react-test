@@ -1,9 +1,9 @@
-.products__basket{
+.products__basket {
   display: flex;
-  flex-wrap: wrap;
-  margin: 60px auto;
   max-width: 890px;
   width: 100%;
+  flex-wrap: wrap;
+  margin: 60px auto;
   justify-content: center;
   gap: 70px;
 }

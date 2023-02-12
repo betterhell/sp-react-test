@@ -1,5 +1,8 @@
 .header {
-  position: relative;
+  position: sticky;
+  top: 0;
+  background-color: #FFFFFF;
+  z-index: 10;
   display: flex;
   justify-content: space-between;
   padding: 0 30px;
@@ -14,13 +17,14 @@
     cursor: pointer;
     border: none;
     background-color: transparent;
+    padding: 10px;
   }
 }
 
 .header__cart_counter {
   position: absolute;
-  top: -5px;
-  right: 0;
+  top: 4px;
+  right: 4px;
   width: 13px;
   height: 13px;
   background: #3366FF;
@@ -33,7 +37,7 @@
   line-height: 12px;
 }
 
-//
+////
 @media screen and (max-width: 768px) {
   .header {
     position: sticky;

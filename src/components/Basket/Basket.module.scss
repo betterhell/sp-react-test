@@ -2,6 +2,7 @@
   max-width: 410px;
   width: 100%;
   border-left: 1px solid #CFCFCF;
+  transition: all 0.3s ease-in-out;
 }
 
 .basket_close {
@@ -22,7 +23,7 @@
 .basket__items {
   background-color: #FFFFFF;
   padding: 40px;
-  height: 340px;
+  height: 240px;
   h1 {
     position: sticky;
     left: 0;
@@ -75,23 +76,28 @@
     position: fixed;
     top: 81px;
     right: 0;
+    bottom: 0;
     max-width: 100%;
-    height: max-content;
+    width: 100%;
     z-index: 100;
     border-left: none;
     transition: all 0.3s ease-in-out;
   }
 
+
+  .basket_sticky {
+    height: 100%;
+  }
+
   .basket__items {
     padding: 20px;
-    height: fit-content;
     h1 {
       top: -20px
     }
   }
 
   .basket__price {
-    padding: 20px;
+    padding: 20px 20px 100vh 20px;
   }
 }
 

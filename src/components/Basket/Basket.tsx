@@ -19,7 +19,7 @@ const Basket = () => {
           <div className={styles.basket_sticky}>
             <div
               className={
-                items.length > 2
+                items.length > 1
                   ? `${styles.basket__items} ${styles.basket__overflow}`
                   : `${styles.basket__items}`
               }
