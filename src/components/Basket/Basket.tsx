@@ -1,16 +1,15 @@
 import React, { useMemo } from "react";
 import styles from "./Basket.module.scss";
-
 import BasketItem from "../BasketItem/BasketItem";
 import { useBasketStore } from "../../store/basket.store";
 
-import { getPrice, getPriceOfCart, priceWithSpace } from "../../utils/price";
+import { getSubtotal, getTotalPrice, priceWithSpace } from "../../utils/price";
 
 const Basket = () => {
   const { items, isOpen } = useBasketStore();
 
-  const totalPrice = useMemo(() => getPriceOfCart(items), [items]);
-  const subtotal = useMemo(() => getPrice(items), [items]);
+  const totalPrice = useMemo(() => getTotalPrice(items), [items]);
+  const subtotal = useMemo(() => getSubtotal(items), [items]);
 
   return (
     <>
