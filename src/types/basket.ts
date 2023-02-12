@@ -1,12 +1,12 @@
 import { IProduct } from "./product";
 
-export interface ICartItem {
+export interface IBasketItem {
   product: IProduct;
   count: number;
 }
 
-export interface ICart {
-  items: ICartItem[];
+export interface IBasket {
+  items: IBasketItem[];
   isOpen: boolean;
   toggleCart: () => void;
   addToCart: (product: IProduct) => void;

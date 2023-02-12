@@ -1,9 +1,9 @@
 import { create } from "zustand";
-import { ICart } from "../types/cart";
+import { IBasket } from "../types/basket";
 import { persist } from "zustand/middleware";
 
 export const useBasketStore = create(
-  persist<ICart>(
+  persist<IBasket>(
     (set, get) => ({
       items: [],
       isOpen: false,

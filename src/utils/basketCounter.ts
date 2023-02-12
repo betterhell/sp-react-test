@@ -1,6 +1,6 @@
-import { ICartItem } from "../types/cart";
+import { IBasketItem } from "../types/basket";
 
-export const basketCounter = (items: ICartItem[]): number => {
+export const basketCounter = (items: IBasketItem[]): number => {
   const productCount = items.map((item) => item.count);
 
   return productCount.reduce((acc, curr) => {
